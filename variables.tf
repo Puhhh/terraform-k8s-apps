@@ -52,6 +52,7 @@ variable "use_helm_custom_values" {
 }
 
 variable "helm_custom_values" {
+  description = "Helm Custom Values Path"
   type      = map(string)
   sensitive = true
   default   = {}

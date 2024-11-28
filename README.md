@@ -37,7 +37,7 @@ No modules.
 | <a name="input_create_custom_secrets"></a> [create\_custom\_secrets](#input\_create\_custom\_secrets) | Create Custom Secrets | `bool` | `false` | no |
 | <a name="input_custom_secrets"></a> [custom\_secrets](#input\_custom\_secrets) | Custom Secrets Data | <pre>list(object({<br/>    name = string<br/>    data = map(string)<br/>    type = optional(string, "kubernetes.io/tls")<br/>  }))</pre> | `[]` | no |
 | <a name="input_helm_config"></a> [helm\_config](#input\_helm\_config) | Helm Config | <pre>list(object({<br/>    release_name  = optional(string, "")<br/>    chart_name    = string<br/>    chart_repo    = string<br/>    chart_version = string<br/>    values_path   = optional(string, "")<br/>  }))</pre> | `[]` | no |
-| <a name="input_helm_custom_values"></a> [helm\_custom\_values](#input\_helm\_custom\_values) | n/a | `map(string)` | `{}` | no |
+| <a name="input_helm_custom_values"></a> [helm\_custom\_values](#input\_helm\_custom\_values) | Helm Custom Values Path | `map(string)` | `{}` | no |
 | <a name="input_kube_context"></a> [kube\_context](#input\_kube\_context) | Kubernetes Context to Use | `string` | `""` | no |
 | <a name="input_kubeconfig_path"></a> [kubeconfig\_path](#input\_kubeconfig\_path) | Kubeconfig Path | `string` | `"~/.kube/config"` | no |
 | <a name="input_namespace_labels"></a> [namespace\_labels](#input\_namespace\_labels) | Namespace Labels | `map(string)` | `{}` | no |
