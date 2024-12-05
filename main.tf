@@ -17,6 +17,8 @@ resource "helm_release" "release" {
     pem_key            = lookup(var.helm_custom_values, "pem_key", ""),
     custom_secret_name = lookup(var.helm_custom_values, "custom_secret_name", ""),
   })] : []
+
+  timeout = 600
 }
 
 resource "null_resource" "delay" {
